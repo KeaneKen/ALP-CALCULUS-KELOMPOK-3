@@ -41,5 +41,17 @@ print("Titik stasioner eksak   : x = -1, x = 1")
 ## 📌 Kasus B – Integral Tentu
 
 ### Fungsi:
-f(x) = x^2
-Interval = [0, 1]
+```python
+from __init__ import trapezoidal, simpsons_one_third
+
+f = lambda x: x**2
+a, b = 0, 1
+
+trap = trapezoidal(f, a, b)
+simp = simpsons_one_third(f, a, b)
+exact = 1/3
+
+print(f"Trapezoidal: {trap}")
+print(f"Simpson 1/3: {simp}")
+print(f"Exact: {exact}")
+```
