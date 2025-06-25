@@ -57,5 +57,5 @@ print(f"Exact: {exact}")
 # 🛠️ How to use
 write "pip install ALP-CALC==0.1.0" at your terminal and before using it make sure to write
 ```python
-from ALP_CALC import #write name function  you want to use
+from ALP_CALC import central_difference #write name function  you want to use
 ```
