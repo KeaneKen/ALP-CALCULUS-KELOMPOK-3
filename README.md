@@ -53,3 +53,9 @@ print(f"Trapezoidal: {trap}")
 print(f"Simpson 1/3: {simp}")
 print(f"Exact: {exact}")
 ```
+
+# 🛠️ How to use
+write "pip install ALP-CALC==0.1.0" at your terminal and before using it make sure to write
+```python
+from ALP_CALC import #write name function  you want to use
+```
