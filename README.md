@@ -18,7 +18,7 @@ NumerikPy adalah library Python sederhana untuk menghitung:
 ## 📌 Kasus A – Titik Ekstrim Lokal
 
 ```python
-from __init__ import central_difference
+from ALP_CALC import central_difference
 
 def f(x): return x**3 - 3*x + 1
 def df(x): return central_difference(f, x)
@@ -40,7 +40,7 @@ print("Titik stasioner eksak   : x = -1, x = 1")
 ## 📌 Kasus B – Integral Tentu
 
 ```python
-from __init__ import trapezoidal, simpsons_one_third
+from ALP_CALC import trapezoidal, simpsons_one_third
 
 f = lambda x: x**2
 a, b = 0, 1
