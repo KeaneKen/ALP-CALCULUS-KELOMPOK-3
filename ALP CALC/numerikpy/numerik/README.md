@@ -37,7 +37,7 @@ x2 = bisection(df, 0, 2)
 
 print(f"Titik stasioner numerik: x ≈ {x1:.5f}, {x2:.5f}")
 print("Titik stasioner eksak   : x = -1, x = 1")
-
+```
 ## 📌 Kasus B – Integral Tentu
 
 ### Fungsi:
