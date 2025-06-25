@@ -19,7 +19,24 @@ NumerikPy adalah library Python sederhana untuk menghitung:
 
 ### Fungsi:
 ```python
-f(x) = x^3 - 3x + 1
+from __init__ import central_difference
+
+def f(x): return x**3 - 3*x + 1
+def df(x): return central_difference(f, x)
+
+def bisection(f, a, b, tol=1e-5):
+    for _ in range(100):
+        c = (a + b) / 2
+        if abs(f(c)) < tol: return c
+        if f(a) * f(c) < 0: b = c
+        else: a = c
+    return (a + b) / 2
+
+x1 = bisection(df, -2, 0)
+x2 = bisection(df, 0, 2)
+
+print(f"Titik stasioner numerik: x ≈ {x1:.5f}, {x2:.5f}")
+print("Titik stasioner eksak   : x = -1, x = 1")
 
 ## 📌 Kasus B – Integral Tentu
 
